@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Friendship card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+  <style>
+     .image-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    .image-container img {
+      max-width: 90%;
+      width: 350px;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      opacity: 0.8;
+      transition: opacity 0.5s ease;
+    }
+
+    .image-container img:hover {
+      opacity: 1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+   body {
+  font-family: 'Indie Flower', cursive;
+  background: linear-gradient(135deg, #fff1f2, #e0f2fe);
+  color: #3f3f46;
+  display: block;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border: 2px dashed #f9a8d4;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card h1 {
+      font-size: 2.2rem;
+      color: #ec4899;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .reveal-btn {
+      background-color: #f472b6;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 1rem;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .reveal-btn:hover {
+      background-color: #ec4899;
+    }
+    .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+    .hidden-message {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.8s ease;
+      font-size: 1rem;
+      margin-top: 1rem;
+      color: #6b7280;
+    }
+
+    .hidden-message.show {
+      opacity: 1;
+      max-height: 500px;
+    }
+
+    @media (max-width: 480px) {
+      .card h1 {
+        font-size: 1.8rem;
+      }
+      .card p {
+        font-size: 1rem;
+      }
+      .reveal-btn {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>For Kimi Kimi 🌸</h1>
+      <p>
+        This card is for you!<br />
+        I don’t exactly know what I’m trying to pull off...  <br>
+        I just really wanted to make something.  <br>
+        I was supposed to finish a physical card, but I didn’t—so I made this instead.<br /><br />
+        I guess I play more with software than with real life.<br />
+        It’s silly, maybe... but here it is.
+      </p>
+
+      <button class="reveal-btn" onclick="document.getElementById('secret').classList.add('show')">
+        tap me, if you're still here
+      </button>
+
+      <div id="secret" class="hidden-message">
+        Thank you for being my friend. Really.<br />
+        It’s nice having someone who stay... And even if it’s not a big deal to you, it kind of is to me.<br /><br />
+        I know I act strange. There’s a lot going on right now, and sometimes I even forget to breathe.<br />
+        It’s weird. I’m weird. And I’m sorry if that made things uncomfortable.<br /><br />
+        But... don’t go “ugh, this Lad again”
+        <br> <br> <br>
+        I hope we continue to be good friends... <br>
+        💕
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="background.jpg" alt="soft closing image" />
+    </div>
+    <h3> Thank you for reading this letter...
+        <br><br>
+        Here... A gift 
+    </h3>
+    <br>
+    <h1>🍫</h1>
+  </div>
+
+  <script>
+  </script>
+</body>
+
+
+</html>
